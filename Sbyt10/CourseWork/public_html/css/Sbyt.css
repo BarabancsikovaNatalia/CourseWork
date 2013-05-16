@@ -1,0 +1,10 @@
+.homePageText
+{
+    font-size: 200%;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(204,204,153);
+    color: Black;
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="SbytServiceLocal">
+         <AppModuleJndiName>coursework.SbytService</AppModuleJndiName>
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <JDBCName>DBConnection1</JDBCName>
+         <ApplicationName>coursework.SbytService</ApplicationName>
+         <jbo.project>CourseWork</jbo.project>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <ConnectionDefinition name="DBConnection1">
+      <ENTRY name="JDBC_PORT" value="1521"/>
+      <ENTRY name="ConnectionType" value="JDBC"/>
+      <ENTRY name="HOSTNAME" value="localhost"/>
+      <ENTRY name="DeployPassword" value="true"/>
+      <ENTRY name="user" value="sbyt"/>
+      <ENTRY name="ConnectionName" value="DBConnection1"/>
+      <ENTRY name="SID" value="XE"/>
+      <ENTRY name="password">
+         <![CDATA[{904}054F561A5F75CA097A1104B2C1FDDDEA09]]>
+      </ENTRY>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.OracleDriver"/>
+      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+</BC4JConfig>

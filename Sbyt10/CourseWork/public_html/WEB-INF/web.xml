@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee">
+    <description>Empty web.xml file for Web Application</description>
+    <filter>
+        <filter-name>adfFaces</filter-name>
+        <filter-class>oracle.adf.view.faces.webapp.AdfFacesFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>adfFaces</filter-name>
+        <servlet-name>Faces Servlet</servlet-name>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>resources</servlet-name>
+        <servlet-class>oracle.adf.view.faces.webapp.ResourceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>resources</servlet-name>
+        <url-pattern>/adf/*</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>35</session-timeout>
+    </session-config>
+    <mime-mapping>
+        <extension>html</extension>
+        <mime-type>text/html</mime-type>
+    </mime-mapping>
+    <mime-mapping>
+        <extension>txt</extension>
+        <mime-type>text/plain</mime-type>
+    </mime-mapping>
+    <welcome-file-list>
+        <welcome-file>/faces/home.jsp</welcome-file>
+    </welcome-file-list>
+    <jsp-config/>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>AdminZone</web-resource-name>
+            <url-pattern>/faces/pages/admin/*</url-pattern>
+        </web-resource-collection>
+        <web-resource-collection>
+            <web-resource-name>CounterZone</web-resource-name>
+            <url-pattern>/faces/pages/counter/*</url-pattern>
+        </web-resource-collection>
+        <web-resource-collection>
+            <web-resource-name>ContracterZone</web-resource-name>
+            <url-pattern>/faces/pages/contracter/*</url-pattern>
+        </web-resource-collection>
+        <web-resource-collection>
+            <web-resource-name>EconomistZone</web-resource-name>
+            <url-pattern>/faces/pages/economist/*</url-pattern>
+        </web-resource-collection>
+        <web-resource-collection>
+            <web-resource-name>AnalystZone</web-resource-name>
+            <url-pattern>/faces/pages/analyst/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+            <role-name>counter</role-name>
+            <role-name>contracter</role-name>
+            <role-name>economist</role-name>
+            <role-name>analyst</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>security/login.jsp</form-login-page>
+            <form-error-page>security/error.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    <security-role>
+        <description>Administrative Users</description>
+        <role-name>admin</role-name>
+    </security-role>
+    <security-role>
+        <description>Counter Users</description>
+        <role-name>counter</role-name>
+    </security-role>
+    <security-role>
+        <description>Officer Contract Division</description>
+        <role-name>contracter</role-name>
+    </security-role>
+    <security-role>
+        <description>Economist Users
+</description>
+        <role-name>economist</role-name>
+    </security-role>
+    <security-role>
+        <description>Business Analyst</description>
+        <role-name>analyst</role-name>
+    </security-role>
+</web-app>
