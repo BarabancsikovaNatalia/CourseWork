@@ -1,2 +1,8 @@
 <?xml version = '1.0' encoding = 'windows-1252'?>
-<data-sources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/data-sources-10_1.xsd" xmlns="http://xmlns.oracle.com/oracleas/schema"/>
+<data-sources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/data-sources-10_1.xsd" xmlns="http://xmlns.oracle.com/oracleas/schema">
+    <connection-pool name="jdev-connection-pool-DBsbyt">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="sbyt" password="->DataBase_User_ox5O1T1Mw_rkgMbl5W3T_tbJUK9LpZBp" url="jdbc:oracle:thin:@//localhost:1521/xe"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-DBsbyt" jndi-name="jdbc/DBsbytDS" connection-pool-name="jdev-connection-pool-DBsbyt"/>
+    <native-data-source name="jdev-connection-native-DBsbyt" jndi-name="jdbc/DBsbytCoreDS" url="jdbc:oracle:thin:@//localhost:1521/xe" user="sbyt" password="->DataBase_User_QXTtRfvpbDgYyjBwnQugx_Q5XwlvwJBH" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+</data-sources>

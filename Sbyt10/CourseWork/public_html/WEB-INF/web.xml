@@ -46,29 +46,45 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>AdminZone</web-resource-name>
-            <url-pattern>/faces/pages/admin/*</url-pattern>
-        </web-resource-collection>
-        <web-resource-collection>
-            <web-resource-name>CounterZone</web-resource-name>
-            <url-pattern>/faces/pages/counter/*</url-pattern>
-        </web-resource-collection>
-        <web-resource-collection>
-            <web-resource-name>ContracterZone</web-resource-name>
-            <url-pattern>/faces/pages/contracter/*</url-pattern>
-        </web-resource-collection>
-        <web-resource-collection>
-            <web-resource-name>EconomistZone</web-resource-name>
-            <url-pattern>/faces/pages/economist/*</url-pattern>
-        </web-resource-collection>
-        <web-resource-collection>
-            <web-resource-name>AnalystZone</web-resource-name>
-            <url-pattern>/faces/pages/analyst/*</url-pattern>
+            <url-pattern>faces/pages/admin/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>admin</role-name>
-            <role-name>counter</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>ContracterZone</web-resource-name>
+            <url-pattern>faces/pages/contracter/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
             <role-name>contracter</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>EconomistZone</web-resource-name>
+            <url-pattern>faces/pages/economist/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
             <role-name>economist</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>CounterZone</web-resource-name>
+            <url-pattern>faces/pages/counter/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>counter</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>AnalystZone</web-resource-name>
+            <url-pattern>faces/pages/analyst/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
             <role-name>analyst</role-name>
         </auth-constraint>
     </security-constraint>

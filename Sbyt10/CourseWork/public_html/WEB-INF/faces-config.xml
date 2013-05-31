@@ -6,17 +6,11 @@
   <application>
     <default-render-kit-id>oracle.adf.core</default-render-kit-id>
   </application>
-  <navigation-rule>
-    <from-view-id>/pages/admin/jobs.jsp</from-view-id>
-  </navigation-rule>
-  <navigation-rule>
-    <from-view-id>/pages/admin/references.jsp</from-view-id>
-    <navigation-case>
-      <from-outcome>jobs</from-outcome>
-      <to-view-id>/pages/admin/jobs.jsp</to-view-id>
-      <redirect/>
-    </navigation-case>
-  </navigation-rule>
+  <managed-bean>
+    <managed-bean-name>backing_logout</managed-bean-name>
+    <managed-bean-class>Sbyt.view.backing.Logout</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+  </managed-bean>
   <navigation-rule>
     <from-view-id>*</from-view-id>
     <navigation-case>
@@ -30,56 +24,38 @@
       <redirect/>
     </navigation-case>
     <navigation-case>
-      <from-outcome>GlobalRef</from-outcome>
-      <to-view-id>/pages/admin/references.jsp</to-view-id>
-      <redirect/>
-    </navigation-case>
-    <navigation-case>
-      <from-outcome>GlobalProfile</from-outcome>
-      <to-view-id>/pages/profile.jsp</to-view-id>
-      <redirect/>
-    </navigation-case>
-    <navigation-case>
-      <from-outcome>dialog:GlobalHelp</from-outcome>
+      <from-outcome>GlobalHelp</from-outcome>
       <to-view-id>/help/help.jsp</to-view-id>
     </navigation-case>
-  </navigation-rule>
-  <managed-bean>
-    <managed-bean-name>backing_logout</managed-bean-name>
-    <managed-bean-class>Sbyt.view.backing.Logout</managed-bean-class>
-    <managed-bean-scope>request</managed-bean-scope>
-  </managed-bean>
-  <navigation-rule>
-    <from-view-id>/pages/contracter/company.jsp</from-view-id>
     <navigation-case>
-      <from-outcome>person1</from-outcome>
-      <to-view-id>/pages/contracter/person.jsp</to-view-id>
+      <from-outcome>GlobalAdmin</from-outcome>
+      <to-view-id>/pages/admin/pageForAdmin.jsp</to-view-id>
+      <redirect/>
     </navigation-case>
     <navigation-case>
-      <from-outcome>contract1</from-outcome>
-      <to-view-id>/pages/contracter/contract.jsp</to-view-id>
-    </navigation-case>
-  </navigation-rule>
-  <navigation-rule>
-    <from-view-id>/pages/contracter/person.jsp</from-view-id>
-    <navigation-case>
-      <from-outcome>company</from-outcome>
-      <to-view-id>/pages/contracter/company.jsp</to-view-id>
+      <from-outcome>GlobalAnalyst</from-outcome>
+      <to-view-id>/pages/analist/pageForAnalyst.jsp</to-view-id>
+      <redirect/>
     </navigation-case>
     <navigation-case>
-      <from-outcome>contract</from-outcome>
-      <to-view-id>/pages/contracter/contract.jsp</to-view-id>
-    </navigation-case>
-  </navigation-rule>
-  <navigation-rule>
-    <from-view-id>/pages/contracter/contract.jsp</from-view-id>
-    <navigation-case>
-      <from-outcome>person2</from-outcome>
-      <to-view-id>/pages/contracter/person.jsp</to-view-id>
+      <from-outcome>GlobalContracter</from-outcome>
+      <to-view-id>/pages/contracter/pageForContracter.jsp</to-view-id>
+      <redirect/>
     </navigation-case>
     <navigation-case>
-      <from-outcome>company2</from-outcome>
-      <to-view-id>/pages/contracter/company.jsp</to-view-id>
+      <from-outcome>GlobalCounter</from-outcome>
+      <to-view-id>/pages/counter/pageForCounter.jsp</to-view-id>
+      <redirect/>
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>GlobalDebt</from-outcome>
+      <to-view-id>/pages/debt/pageForDebts.jsp</to-view-id>
+      <redirect/>
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>GlobalEconomist</from-outcome>
+      <to-view-id>/pages/economist/pageForEconomist.jsp</to-view-id>
+      <redirect/>
     </navigation-case>
   </navigation-rule>
 </faces-config>

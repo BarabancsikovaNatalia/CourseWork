@@ -13,20 +13,30 @@
     </afh:head>
     <afh:body>
       <h:form>
-        <af:panelPage title="Change This">
+        <af:panelPage title="Contracter Page">
           <f:facet name="menu1">
             <af:menuTabs>
               <af:commandMenuItem text="Home" action="GlobalHome"/>
-              <af:commandMenuItem text="My Profile" action="GlobalProfile"/>
-              <af:commandMenuItem text="References" action="GlobalRef"/>
+              <af:commandMenuItem text="Contracter" action="GlobalContracter"
+                                  selected="true"/>
+              <af:commandMenuItem action="GlobalEconomist" text="Economist"
+                                  disabled="true"/>
+              <af:commandMenuItem text="Counter" action="GlobalCounter"
+                                  disabled="true"/>
+              <af:commandMenuItem text="Specialist in working with debt"
+                                  action="GlobalDebt" disabled="true"/>
+              <af:commandMenuItem text="Analyst" action="GlobalAnalyst"
+                                  disabled="true"/>
+              <af:commandMenuItem text="Admin" action="GlobalAdmin"
+                                  disabled="true"/>
             </af:menuTabs>
           </f:facet>
           <f:facet name="menuGlobal">
             <af:menuButtons>
-              <af:commandMenuItem text="Logout" icon="images/logout.png"
+              <af:commandMenuItem text="Logout" icon="../../images/logout.png"
                                   action="GlobalLogout"/>
-              <af:commandMenuItem text="Help" icon="images/help.gif"
-                                  action="dialog:GlobalHelp" useWindow="true"/>
+              <af:commandMenuItem text="Help" icon="../../images/help.gif" useWindow="true"
+                                  action="dialog:GlobalHelp"/>
             </af:menuButtons>
           </f:facet>
           <f:facet name="branding">

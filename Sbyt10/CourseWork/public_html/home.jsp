@@ -36,8 +36,8 @@
           <f:facet name="messages">
             <af:messages/>
           </f:facet>
-          <af:commandButton text="Login" action="GlobalHome"/>
           <af:objectSpacer width="10" height="10"/>
+          <af:commandButton text="Login" action="GlobalHome"/>
         </af:panelPage>
       </h:form>
     </afh:body>

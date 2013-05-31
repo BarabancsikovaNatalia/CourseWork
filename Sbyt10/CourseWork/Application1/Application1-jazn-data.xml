@@ -28,6 +28,18 @@
                     <name>UContracter</name>
                     <credentials>{903}CPnZn4SfZyaIo79ehUVbBbcGj2cG8z5QGtb75tXpptA=</credentials>
                 </user>
+                <user>
+                    <name>USpecialistForDebts</name>
+                    <credentials>{903}gMa/nkjMVYrN3/c/3bFX+qurZ5KF5Vnd</credentials>
+                </user>
+                <user>
+                    <name>DataBase_User_ox5O1T1Mw_rkgMbl5W3T_tbJUK9LpZBp</name>
+                    <credentials>{903}ox5O1T1Mw/rkgMbl5W3T/tbJUK9LpZBp</credentials>
+                </user>
+                <user>
+                    <name>DataBase_User_QXTtRfvpbDgYyjBwnQugx_Q5XwlvwJBH</name>
+                    <credentials>{903}QXTtRfvpbDgYyjBwnQugx/Q5XwlvwJBH</credentials>
+                </user>
             </users>
             <roles>
                 <role>
@@ -88,6 +100,19 @@
                         <member>
                             <type>user</type>
                             <name>UDirector</name>
+                        </member>
+                    </members>
+                </role>
+                <role>
+                    <name>debts</name>
+                    <members>
+                        <member>
+                            <type>user</type>
+                            <name>UDirector</name>
+                        </member>
+                        <member>
+                            <type>user</type>
+                            <name>USpecialistForDebts</name>
                         </member>
                     </members>
                 </role>

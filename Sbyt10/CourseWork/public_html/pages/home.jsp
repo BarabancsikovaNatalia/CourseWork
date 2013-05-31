@@ -10,25 +10,29 @@
     <afh:head title="Chelyabinsk Power Sales Company">
       <meta http-equiv="Content-Type"
             content="text/html; charset=windows-1252"/>
-      <link type="text/css" rel="stylesheet" href="../css/Sbyt.css"/>
     </afh:head>
     <afh:body>
       <h:form>
-        <af:panelPage title="Welcome to Chelyabinsk Power Sales Company">
+        <af:panelPage title="Home Page">
           <f:facet name="menu1">
             <af:menuTabs>
               <af:commandMenuItem text="Home" action="GlobalHome"
                                   selected="true"/>
-              <af:commandMenuItem text="My Profile" action="GlobalProfile"/>
-              <af:commandMenuItem text="References" action="GlobalRef"/>
+              <af:commandMenuItem text="Contracter" action="GlobalContracter"/>
+              <af:commandMenuItem action="GlobalEconomist" text="Economist"/>
+              <af:commandMenuItem text="Counter" action="GlobalCounter"/>
+              <af:commandMenuItem text="Specialist in working with debt"
+                                  action="GlobalDebt"/>
+              <af:commandMenuItem text="Analyst" action="GlobalAnalyst"/>
+              <af:commandMenuItem text="Admin" action="GlobalAdmin"/>
             </af:menuTabs>
           </f:facet>
           <f:facet name="menuGlobal">
             <af:menuButtons>
-              <af:commandMenuItem text="Logout" icon="images/logout.png"
-                                  action="GlobalLogout"/>
-              <af:commandMenuItem text="Help" icon="images/help.gif"
-                                  action="dialog:GlobalHelp" useWindow="true"/>
+              <af:commandMenuItem text="Logout" icon="../images/logout.png"
+                                  action="log"/>
+              <af:commandMenuItem text="Help" icon="../images/help.gif" useWindow="true"
+                                  action="dialog:GlobalHelp"/>
             </af:menuButtons>
           </f:facet>
           <f:facet name="branding">
@@ -40,9 +44,6 @@
           <f:facet name="messages">
             <af:messages/>
           </f:facet>
-          <af:objectSpacer width="10" height="10"/>
-          <af:commandButton text="Logout" action="GlobalLogout"/>
-          <af:objectSpacer width="10" height="10"/>
         </af:panelPage>
       </h:form>
     </afh:body>

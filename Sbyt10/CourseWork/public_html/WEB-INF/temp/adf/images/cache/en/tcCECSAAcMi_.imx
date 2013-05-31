@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImageMetadata version="2.0" xmlns="http://xmlns.oracle.com/uix/image">
+<tabBar textAntialias="false" disabled="false" width="698" height="20" direction="ltr" selectedIndex="-1">
+<foreground red="0" green="0" blue="0"/>
+<background red="210" green="216" blue="176"/>
+<font>
+<name>Dialog</name>
+<size>12</size>
+<style>plain</style>
+</font>
+<imageMap>
+<area shape="poly" coords="0,19,10,0,141,0,149,8,149,19"/>
+<area shape="poly" coords="145,19,155,0,224,0,232,8,232,19"/>
+<area shape="poly" coords="228,19,238,0,306,0,314,8,314,19"/>
+<area shape="poly" coords="310,19,320,0,373,0,381,8,381,19"/>
+<area shape="poly" coords="377,19,387,0,568,0,576,8,576,19"/>
+<area shape="poly" coords="572,19,582,0,632,0,640,8,640,19"/>
+<area shape="poly" coords="636,19,646,0,690,0,698,8,698,19"/>
+</imageMap>
+<tab>
+<text>commandMenuItem 1</text>
+</tab>
+<tab>
+<text>Contracter</text>
+</tab>
+<tab>
+<text>Economist</text>
+</tab>
+<tab>
+<text>Counter</text>
+</tab>
+<tab>
+<text>Specialist in working with debt</text>
+</tab>
+<tab>
+<text>Analyst</text>
+</tab>
+<tab>
+<text>Admin</text>
+</tab>
+<selectedForeground red="255" green="255" blue="255"/>
+<selectedBackground red="51" green="102" blue="153"/>
+<selectedFont>
+<name>Dialog</name>
+<size>12</size>
+<style>bold</style>
+</selectedFont>
+<disabledForeground red="255" green="255" blue="227"/>
+<disabledBackground red="210" green="216" blue="176"/>
+<disabledFont>
+<name>Dialog</name>
+<size>12</size>
+<style>plain</style>
+</disabledFont>
+</tabBar>
+</ImageMetadata>

@@ -126,9 +126,10 @@ public class _references extends com.orionserver.http.OrionHttpJspPage {
                                       }
                                       out.write(__oracle_jsp_text[15]);
                                       {
-                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_10=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text action");
+                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_10=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text disabled action");
                                         __jsp_taghandler_10.setParent(__jsp_taghandler_8);
                                         __jsp_taghandler_10.setText("My Profile");
+                                        __jsp_taghandler_10.setDisabled("true");
                                         __jsp_taghandler_10.setAction("GlobalProfile");
                                         __jsp_tag_starteval=__jsp_taghandler_10.doStartTag();
                                         if (__jsp_taghandler_10.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)

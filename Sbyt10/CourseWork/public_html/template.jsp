@@ -17,16 +17,21 @@
           <f:facet name="menu1">
             <af:menuTabs>
               <af:commandMenuItem text="Home" action="GlobalHome"/>
-              <af:commandMenuItem text="My Profile" action="GlobalProfile"/>
-              <af:commandMenuItem text="References" action="GlobalRef"/>
+              <af:commandMenuItem text="Contracter" action="GlobalContracter"/>
+              <af:commandMenuItem action="GlobalEconomist" text="Economist"/>
+              <af:commandMenuItem text="Counter" action="GlobalCounter"/>
+              <af:commandMenuItem text="Specialist in working with debt"
+                                  action="GlobalDebt"/>
+              <af:commandMenuItem text="Analyst" action="GlobalAnalyst"/>
+              <af:commandMenuItem text="Admin" action="GlobalAdmin"/>
             </af:menuTabs>
           </f:facet>
           <f:facet name="menuGlobal">
             <af:menuButtons>
               <af:commandMenuItem text="Logout" icon="images/logout.png"
                                   action="GlobalLogout"/>
-              <af:commandMenuItem text="Help" icon="images/help.gif"
-                                  action="dialog:GlobalHelp" useWindow="true"/>
+              <af:commandMenuItem text="Help" icon="images/help.gif" useWindow="true"
+                                  action="dialog:GlobalHelp"/>
             </af:menuButtons>
           </f:facet>
           <f:facet name="branding">

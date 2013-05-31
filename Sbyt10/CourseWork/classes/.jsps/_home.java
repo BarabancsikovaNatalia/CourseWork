@@ -257,10 +257,10 @@ public class _home extends com.orionserver.http.OrionHttpJspPage {
                             }
                             out.write(__oracle_jsp_text[31]);
                             {
-                              oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandButtonTag __jsp_taghandler_19=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandButtonTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandButtonTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandButtonTag text action");
+                              oracle.adfinternal.view.faces.taglib.core.output.CoreObjectSpacerTag __jsp_taghandler_19=(oracle.adfinternal.view.faces.taglib.core.output.CoreObjectSpacerTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.output.CoreObjectSpacerTag.class,"oracle.adfinternal.view.faces.taglib.core.output.CoreObjectSpacerTag width height");
                               __jsp_taghandler_19.setParent(__jsp_taghandler_6);
-                              __jsp_taghandler_19.setText("Login");
-                              __jsp_taghandler_19.setAction("GlobalHome");
+                              __jsp_taghandler_19.setWidth("10");
+                              __jsp_taghandler_19.setHeight("10");
                               __jsp_tag_starteval=__jsp_taghandler_19.doStartTag();
                               if (__jsp_taghandler_19.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                                 return;
@@ -268,10 +268,10 @@ public class _home extends com.orionserver.http.OrionHttpJspPage {
                             }
                             out.write(__oracle_jsp_text[32]);
                             {
-                              oracle.adfinternal.view.faces.taglib.core.output.CoreObjectSpacerTag __jsp_taghandler_20=(oracle.adfinternal.view.faces.taglib.core.output.CoreObjectSpacerTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.output.CoreObjectSpacerTag.class,"oracle.adfinternal.view.faces.taglib.core.output.CoreObjectSpacerTag width height");
+                              oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandButtonTag __jsp_taghandler_20=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandButtonTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandButtonTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandButtonTag text action");
                               __jsp_taghandler_20.setParent(__jsp_taghandler_6);
-                              __jsp_taghandler_20.setWidth("10");
-                              __jsp_taghandler_20.setHeight("10");
+                              __jsp_taghandler_20.setText("Login");
+                              __jsp_taghandler_20.setAction("GlobalHome");
                               __jsp_tag_starteval=__jsp_taghandler_20.doStartTag();
                               if (__jsp_taghandler_20.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                                 return;

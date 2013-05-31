@@ -138,10 +138,9 @@ public class _profile extends com.orionserver.http.OrionHttpJspPage {
                                       }
                                       out.write(__oracle_jsp_text[16]);
                                       {
-                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_11=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text selected action");
+                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_11=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text action");
                                         __jsp_taghandler_11.setParent(__jsp_taghandler_8);
                                         __jsp_taghandler_11.setText("References");
-                                        __jsp_taghandler_11.setSelected("false");
                                         __jsp_taghandler_11.setAction("GlobalRef");
                                         __jsp_tag_starteval=__jsp_taghandler_11.doStartTag();
                                         if (__jsp_taghandler_11.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -182,7 +181,7 @@ public class _profile extends com.orionserver.http.OrionHttpJspPage {
                                         oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_14=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text icon action");
                                         __jsp_taghandler_14.setParent(__jsp_taghandler_13);
                                         __jsp_taghandler_14.setText("Logout");
-                                        __jsp_taghandler_14.setIcon("../images/logout.png");
+                                        __jsp_taghandler_14.setIcon("images/logout.png");
                                         __jsp_taghandler_14.setAction("GlobalLogout");
                                         __jsp_tag_starteval=__jsp_taghandler_14.doStartTag();
                                         if (__jsp_taghandler_14.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -194,7 +193,7 @@ public class _profile extends com.orionserver.http.OrionHttpJspPage {
                                         oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_15=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text icon useWindow action");
                                         __jsp_taghandler_15.setParent(__jsp_taghandler_13);
                                         __jsp_taghandler_15.setText("Help");
-                                        __jsp_taghandler_15.setIcon("../images/help.gif");
+                                        __jsp_taghandler_15.setIcon("images/help.gif");
                                         __jsp_taghandler_15.setUseWindow("true");
                                         __jsp_taghandler_15.setAction("dialog:GlobalHelp");
                                         __jsp_tag_starteval=__jsp_taghandler_15.doStartTag();

@@ -93,7 +93,7 @@ public class _company extends com.orionserver.http.OrionHttpJspPage {
                         {
                           oracle.adfinternal.view.faces.taglib.core.layout.CorePanelPageTag __jsp_taghandler_6=(oracle.adfinternal.view.faces.taglib.core.layout.CorePanelPageTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.layout.CorePanelPageTag.class,"oracle.adfinternal.view.faces.taglib.core.layout.CorePanelPageTag title");
                           __jsp_taghandler_6.setParent(__jsp_taghandler_5);
-                          __jsp_taghandler_6.setTitle("Enter or delete data about Contracticing Parties (company)");
+                          __jsp_taghandler_6.setTitle("Change This");
                           __jsp_tag_starteval=__jsp_taghandler_6.doStartTag();
                           if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
                           {
@@ -115,9 +115,10 @@ public class _company extends com.orionserver.http.OrionHttpJspPage {
                                     {
                                       out.write(__oracle_jsp_text[14]);
                                       {
-                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_9=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text action");
+                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_9=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text selected action");
                                         __jsp_taghandler_9.setParent(__jsp_taghandler_8);
                                         __jsp_taghandler_9.setText("Home");
+                                        __jsp_taghandler_9.setSelected("true");
                                         __jsp_taghandler_9.setAction("GlobalHome");
                                         __jsp_tag_starteval=__jsp_taghandler_9.doStartTag();
                                         if (__jsp_taghandler_9.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -137,10 +138,9 @@ public class _company extends com.orionserver.http.OrionHttpJspPage {
                                       }
                                       out.write(__oracle_jsp_text[16]);
                                       {
-                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_11=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text selected action");
+                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_11=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text action");
                                         __jsp_taghandler_11.setParent(__jsp_taghandler_8);
                                         __jsp_taghandler_11.setText("References");
-                                        __jsp_taghandler_11.setSelected("false");
                                         __jsp_taghandler_11.setAction("GlobalRef");
                                         __jsp_tag_starteval=__jsp_taghandler_11.doStartTag();
                                         if (__jsp_taghandler_11.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -309,10 +309,11 @@ public class _company extends com.orionserver.http.OrionHttpJspPage {
                                     {
                                       out.write(__oracle_jsp_text[36]);
                                       {
-                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_24=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text action");
+                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_24=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text selected action");
                                         __jsp_taghandler_24.setParent(__jsp_taghandler_23);
                                         __jsp_taghandler_24.setText("Contracting Parties (person)");
-                                        __jsp_taghandler_24.setAction("person1");
+                                        __jsp_taghandler_24.setSelected("false");
+                                        __jsp_taghandler_24.setAction("person2");
                                         __jsp_tag_starteval=__jsp_taghandler_24.doStartTag();
                                         if (__jsp_taghandler_24.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                                           return;
@@ -324,7 +325,7 @@ public class _company extends com.orionserver.http.OrionHttpJspPage {
                                         __jsp_taghandler_25.setParent(__jsp_taghandler_23);
                                         __jsp_taghandler_25.setText("Contracting Parties (company)");
                                         __jsp_taghandler_25.setSelected("true");
-                                        __jsp_taghandler_25.setAction("company");
+                                        __jsp_taghandler_25.setAction("company2");
                                         __jsp_tag_starteval=__jsp_taghandler_25.doStartTag();
                                         if (__jsp_taghandler_25.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                                           return;
@@ -332,10 +333,11 @@ public class _company extends com.orionserver.http.OrionHttpJspPage {
                                       }
                                       out.write(__oracle_jsp_text[38]);
                                       {
-                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_26=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text action");
+                                        oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag __jsp_taghandler_26=(oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag)OracleJspRuntime.getTagHandler(pageContext,oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag.class,"oracle.adfinternal.view.faces.taglib.core.nav.CoreCommandMenuItemTag text selected action");
                                         __jsp_taghandler_26.setParent(__jsp_taghandler_23);
                                         __jsp_taghandler_26.setText("Contracts");
-                                        __jsp_taghandler_26.setAction("contract1");
+                                        __jsp_taghandler_26.setSelected("false");
+                                        __jsp_taghandler_26.setAction("contracts");
                                         __jsp_tag_starteval=__jsp_taghandler_26.doStartTag();
                                         if (__jsp_taghandler_26.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                                           return;
